@@ -1,0 +1,66 @@
+ * Serving Flask app 'server' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5050 (Press CTRL+C to quit)
+127.0.0.1 - - [07/Sep/2022 15:33:13] "POST /login HTTP/1.1" 200 -
+[2022-09-07 15:33:14,259] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "server.py", line 40, in login
+    status = lc(uid,url)
+  File "/var/www/html/FaceAPI2/logindeepface_v3.py", line 12, in login_check
+    header, encoded = image.split(',', 1)
+AttributeError: 'NoneType' object has no attribute 'split'
+127.0.0.1 - - [07/Sep/2022 15:33:14] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+[2022-09-07 15:33:33,367] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "server.py", line 40, in login
+    status = lc(uid,url)
+  File "/var/www/html/FaceAPI2/logindeepface_v3.py", line 12, in login_check
+    header, encoded = image.split(',', 1)
+AttributeError: 'NoneType' object has no attribute 'split'
+127.0.0.1 - - [07/Sep/2022 15:33:33] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+127.0.0.1 - - [07/Sep/2022 15:33:52] "POST /login HTTP/1.1" 200 -
+[2022-09-07 15:33:52,926] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "server.py", line 40, in login
+    status = lc(uid,url)
+  File "/var/www/html/FaceAPI2/logindeepface_v3.py", line 12, in login_check
+    header, encoded = image.split(',', 1)
+AttributeError: 'NoneType' object has no attribute 'split'
+127.0.0.1 - - [07/Sep/2022 15:33:52] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+127.0.0.1 - - [08/Sep/2022 00:40:38] "POST /login HTTP/1.1" 200 -
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 4s 4s/step
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 83ms/step
+127.0.0.1 - - [09/Sep/2022 00:16:57] "POST /login HTTP/1.1" 200 -
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 72ms/step
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 64ms/step
+127.0.0.1 - - [09/Sep/2022 00:17:41] "POST /login HTTP/1.1" 200 -
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 85ms/step
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 73ms/step
+127.0.0.1 - - [09/Sep/2022 00:18:24] "POST /login HTTP/1.1" 200 -
