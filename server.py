@@ -1,7 +1,7 @@
 from flask import Flask, request, Blueprint, send_from_directory
 import os
-from logindeepface_v4 import login_check as lc
-from registerdeepface_v2 import register_on_submit as rs
+from login_check import login_check as lc
+from register_on_submit import register_on_submit as rs
 
 
 main = Blueprint('main', __name__)

@@ -1,2 +1,9 @@
 env
 __pycache__
+*.node-runtime
+.vscode
+wfastcgi
+
+out
+output.log
+web.config
