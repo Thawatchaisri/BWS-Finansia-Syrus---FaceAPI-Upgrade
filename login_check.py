@@ -1,11 +1,24 @@
 from base64 import b64decode
-from deepface.DeepFace import verify, build_model
+from deepface.DeepFace import verify
 from time import time
 from os import remove
 
 def login_check(uid, image):
+    """
+    The function `login_check` takes a user ID and an image, saves the image as a PNG file, verifies it
+    against a reference image using a face recognition model, and returns whether the images match or
+    not.
+    
+    :param uid: The `uid` parameter is the user ID, which is used to locate the image file of the user
+    in the `student` directory
+    :param image: The "image" parameter is a base64 encoded string representation of an image
+    :return: The function `login_check` returns one of the following strings:
+    - "Match" if the image provided matches the image associated with the given `uid`.
+    - "Not match" if the image provided does not match the image associated with the given `uid`.
+    - "No face detected" if no face is detected in the provided image.
+    """
     file_new = str(time())
-    header, encoded = image.split(',', 1)
+    _, encoded = image.split(',', 1)
     with open(file_new + '.png', 'wb') as (f):
         f.write(b64decode(encoded))
 
